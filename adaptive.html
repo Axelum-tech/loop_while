@@ -1,0 +1,29 @@
+<script>
+    // IN data
+    const BREAK_POINT_LG  = 1200
+    const BREAK_POINT_MD  = 980
+    const BREAK_POINT_SM  = 560
+   
+    // 
+    // let windowWidth     = window.screen.width
+    let windowWidthPc   =innerWidth
+    // DECISION / adaptive
+    
+
+    if (windowWidth>=BREAK_POINT_LG && windowWidthPc<=3000){
+        alert("Large Screen"+windowWidthPc)
+    }else if(windowWidth<BREAK_POINT_LG && windowWidthPc>=BREAK_POINT_MD){
+        alert("Medium Screen"+windowWidthPc)
+    }else if(windowWidth<BREAK_POINT_MD && windowWidthPc>=BREAK_POINT_SM){
+        alert("Small Screen"+windowWidthPc)
+    }else if(windowWidth<BREAK_POINT_SM && windowWidthPc>=60){
+        alert("Extra Small Screen"+windowWidthPc)
+    }else if(windowWidthPc<60){
+        alert("Too small screen")
+    }else if(windowWidthPc>3000){
+        alert("Too large screen")
+        }
+    
+
+
+</script>
